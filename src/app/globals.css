@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --backgrounnd-light-yellow: #f9f8f3;
+  --background-light-yellow: #f9f8f3;
+  --backgrounnd-white: #ffffff;
+  --background-white: #ffffff;
+  --backgrounnd-yellow: #fff1c2;
+  --background-yellow: #fff1c2;
+  --background-darkblue: #171b2c;
+  --background-orange: #ffcb9f;
+  --primary-blue: #3157f6;
+  --primary-blue-light: #e2e8ff;
+  --primary-orange: #ff704d;
+  --secondary-yellow: #ffee7e;
+  --text-primary: #171b2c;
+  --text-secondary: #656770;
+  --text-tertiary: #6d7384;
+  --text-white-primary: #ffffff;
+  --text-white-secondary: #e7e7ec;
+  --text-white-tertiary: #9e9faa;
+  --line-1: #dbdfeb;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: var(--text-primary);
+  background-color: var(--background-light-yellow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
